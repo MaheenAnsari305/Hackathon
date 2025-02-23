@@ -12,7 +12,6 @@ const UserManagement = () => {
 
   
   const handleRegister = () => {
-    // Check if email already exists
     if (users.find(user => user.email === email)) {
       setMessage('Email already exists!');
       return;
@@ -45,7 +44,9 @@ const UserManagement = () => {
     <Box
       sx={{
         backgroundColor: '#f4f4f9',
-        padding: '90px 90px',
+        padding: '90px 60px',
+        marginRight:'90px',
+        marginTop:'50px',
         borderRadius: '8px',
         boxShadow: '0 6px 10px rgba(0, 0, 0, 0.1)',
         display: 'flex',
@@ -130,7 +131,7 @@ const UserManagement = () => {
               padding: '12px',
               fontWeight: 'bold',
               marginTop: '20px',
-              backgroundColor: '#777799',
+              backgroundColor: '#F44886',
               '&:hover': {
                 backgroundColor: '#45a049',
               },
