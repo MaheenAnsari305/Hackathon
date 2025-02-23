@@ -68,7 +68,7 @@ const BookingManagement = () => {
   };
 
   return (
-    <Box sx={{ padding: '20px',marginTop: '60px' }}>
+    <Box sx={{  padding: '90px', marginLeft: '-30px' , width:'600px'}}>
       <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '20px' }}>
         Room Booking Management
       </Typography>
@@ -112,7 +112,7 @@ const BookingManagement = () => {
         variant="contained"
         color="primary"
         onClick={handleRoomBooking}
-        sx={{ marginTop: '20px', width: '100%' }}
+        sx={{ marginTop: '20px', width: '100%' , backgroundColor: '#F44886'}}
       >
         Book Room
       </Button>
