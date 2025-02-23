@@ -68,8 +68,8 @@ const services = [
 
 const ServiceCard = ({ service }) => {
   return (
-    <Grid item xs={12} sm={6} md={4}>
-      <Card sx={{ boxShadow: 3 }}>
+    <Grid item xs={12} sm={6} md={5}>
+      <Card sx={{ boxShadow: 5 , marginBottom: '20px', marginLeft: '1px', marginRight: '15px'   }}>
         <CardContent>
           <Typography variant="h6" gutterBottom>Service ID: {service.serviceID}</Typography>
           <Typography variant="body1"><strong>Service Type:</strong> {service.serviceType}</Typography>
@@ -83,7 +83,7 @@ const ServiceCard = ({ service }) => {
 
 const ServiceManagement = () => {
   return (
-    <div style={{ padding: '20px', marginTop: '70px', marginLeft: '-20px' }}>
+    <div style={{ padding: '20px', marginTop: '70px', marginLeft: '-60px' }}>
       <Typography variant="h4" style={{ marginBottom: '20px' }}>
         Hotel Services Management
       </Typography>
