@@ -86,8 +86,8 @@ const payments = [
 
 const PaymentCard = ({ payment }) => {
   return (
-    <Grid item xs={12} sm={6} md={4}>
-      <Card sx={{ boxShadow: 3, marginBottom: '20px', marginLeft: '2px', marginRight: '10px' }}>
+    <Grid item xs={12} sm={6} md={5}>
+      <Card sx={{ boxShadow: 5, marginBottom: '20px', marginLeft: '1px', marginRight: '15px'  }}>
         <CardContent>
           <Typography variant="h6" gutterBottom>Payment ID: {payment.paymentID}</Typography>
           <Typography variant="body1"><strong>Booking ID:</strong> {payment.bookingID}</Typography>
