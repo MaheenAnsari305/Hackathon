@@ -45,7 +45,7 @@ const CustomerRegistration = ({ onRegister }) => {
   };
 
   return (
-    <Container sx={{ padding: '20px', marginLeft: '-60px' }}>
+    <Container sx={{ padding: '90px', marginLeft: '-30px' , width:'600px'}}>
       <Paper sx={{
         marginTop: '20px',
         padding: '20px',
@@ -91,7 +91,7 @@ const CustomerRegistration = ({ onRegister }) => {
           variant="contained"
           color="primary"
           onClick={handleRegister}
-          sx={{ marginTop: '20px', width: '100%' }}
+          sx={{ marginTop: '20px', width: '100%' , backgroundColor:'#f44886' }}
         >
           Register Customer
         </Button>
@@ -157,7 +157,7 @@ const BookingManagement = () => {
   };
 
   return (
-    <Container sx={{ padding: '20px' }}>
+    <Container sx={{ padding: '90px', marginLeft: '-30px' , width:'600px' }}>
       <Paper sx={{
         padding: '20px',
         backgroundColor: '#f5f5f5',
@@ -229,7 +229,7 @@ const BookingManagement = () => {
           variant="contained"
           color="primary"
           onClick={handleRoomBooking}
-          sx={{ marginTop: '20px', width: '100%' }}
+          sx={{ marginTop: '20px', width: '100%' , backgroundColor:'#f44886' }}
         >
           Book Room
         </Button>
