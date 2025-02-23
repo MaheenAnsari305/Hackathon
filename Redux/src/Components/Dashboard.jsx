@@ -123,7 +123,7 @@ export default function Dashboard() {
   const renderMenuItems = (role) => {
     return pages.map((obj, index) => {
       if (role === 'client' && obj.name === 'Staff') {
-        return null; // Clients don't see Staff section
+        return null; 
       }
 
       return (
@@ -134,7 +134,7 @@ export default function Dashboard() {
               display: 'flex',
               justifyContent: 'space-between',
               paddingY: 1.5,
-              '&:hover': { backgroundColor: '#4CAF50' },
+              '&:hover': { backgroundColor: '#F44886' },
             }}
           >
             <ListItemIcon sx={{ minWidth: 'auto', color: 'white' }}>
@@ -157,7 +157,7 @@ export default function Dashboard() {
                   <ListItemButton
                     sx={{
                       pl: 4,
-                      '&:hover': { backgroundColor: '#66BB6A' },
+                      '&:hover': { backgroundColor: '#F44886' },
                     }}
                     onClick={() => {
                       navigate(`/dashboard/${child.route}`);
@@ -182,7 +182,7 @@ export default function Dashboard() {
         sx={{
           width: `calc(100% - ${drawerWidth}px)`,
           ml: `${drawerWidth}px`,
-          backgroundColor: '#777799',
+          backgroundColor: '#161047',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         }}
       >
@@ -215,7 +215,7 @@ export default function Dashboard() {
           '& .MuiDrawer-paper': {
             width: drawerWidth,
             boxSizing: 'border-box',
-            backgroundColor: '#777799',
+            backgroundColor: '#161047',
             color: 'white',
           },
         }}
